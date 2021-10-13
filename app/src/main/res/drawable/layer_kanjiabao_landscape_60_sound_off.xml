@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item android:width="30dp"-->
+<!--        android:height="30dp"-->
+<!--        android:drawable="@drawable/kanjiabao_landscape_sound_off"></item>-->
+
+    <item android:drawable="@drawable/svg_kanjiabao_landscape_circle" />
+    <item
+        android:drawable="@drawable/svg_kanjiabao_landscape_sound_off"
+        android:gravity="center"
+        android:bottom="6dp"
+        android:left="6dp"
+        android:right="6dp"
+        android:top="6dp"/>
+</layer-list>

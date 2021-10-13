@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.evmtv.cloudvideo.common.view.EditPersonalActivity">
+
+    <RelativeLayout
+        android:id="@+id/titleRelViewID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TitleHighDP"
+        android:background="@color/title_background"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backViewID"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:padding="23dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/svg_back_left" />
+
+        <TextView
+            android:id="@+id/titleViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="编辑个人信息"
+            android:textColor="@color/title_color" />
+
+        <Button
+            android:id="@+id/shareQRCodeViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingRight="20dp"
+            android:visibility="invisible"
+            android:text="完成"
+            android:textColor="@color/title_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relHeadViewID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/titleRelViewID">
+
+        <ImageView
+            android:id="@+id/img_arr"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="17dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/svg_back_right" />
+
+        <ImageView
+            android:id="@+id/editPictureViewID"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_arr"
+            android:src="@drawable/my_setting_default_header" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="头像" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relNameViewID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/titleRelViewID">
+
+        <ImageView
+            android:id="@+id/imgNameImgViewID"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="17dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/svg_back_right" />
+
+        <TextView
+            android:id="@+id/NameTextViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgNameImgViewID" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="真实姓名" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relPassWorldViewID"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/titleRelViewID">
+
+        <ImageView
+            android:id="@+id/PassWorldImgViewID"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="17dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/svg_back_right" />
+
+        <TextView
+            android:id="@+id/passWorldTextViewID"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/PassWorldImgViewID" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="修改密码" />
+    </RelativeLayout>
+
+</LinearLayout>

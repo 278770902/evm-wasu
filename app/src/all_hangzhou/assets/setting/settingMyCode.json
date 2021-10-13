@@ -1,0 +1,5 @@
+{
+  "url": "www.baidu.com",
+  "title": "我的二维码",
+  "action": "com.evmtv.cloudvideo.common.MYQRCODE"
+}

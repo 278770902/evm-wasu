@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="NotOnTouchListener">
+
+
+    <ImageButton
+        android:id="@+id/kanJiaBaoLandscapeBackViewId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/item_kanjiabao_landscape_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/KanJiaBaoLandscapeIBPlayViewId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/item_kanjiabao_landscape_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <!--       android:src="@drawable/kanjiabao_landscape_sound"-->
+    <CheckBox
+        android:id="@+id/KanJiaBaoLandscapeIBSoundViewId"
+        style="@style/KanJiaBaoLandscapeSelectVoice"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/KanJiaBaoLandscapeIBPlayViewId" />
+
+    <ImageButton
+        android:id="@+id/KanJiaBaoLandscapeMicrophoneViewId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/item_kanjiabao_landscape_microphone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/KanJiaBaoLandscapeIBSoundViewId" />
+
+
+    <RelativeLayout
+        android:id="@+id/ll_talk_back_down"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/kanjiabao_talk_back_down"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/LandscapeTalkBackSpeakViewId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@null" />
+
+            <ImageButton
+                android:id="@+id/talkBackCloseViewId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="按住说话"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/KanJiaBaoLandscapeMoreViewId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/svg_kanjiabao_landscape_more"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/KanJiaBaoLandscapeAlarmViewId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kanjiabao_landscape_alarm"
+        app:layout_constraintRight_toLeftOf="@id/KanJiaBaoLandscapeMoreViewId"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/KanJiaBaoLandscapeBackLookViewId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/svg_kanjiabao_landscape_back_look"
+        app:layout_constraintBottom_toTopOf="@id/kanJiaBaoCircleLandscapeViewByImageViewID"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/kanjiabaoLandscapeLiveHdCheckBoxViewId"
+        style="@style/KanJiaBaoHdCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:checked="false"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@id/KanJiaBaoLandscapeMoreViewId"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--           android:background="@drawable/kanjiabao_hd_landscape_bg"-->
+    <RelativeLayout
+        android:id="@+id/kanJiaBaoLandscapeLiveHdButtonViewId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/svg_kanjiabao_landscape_circle"
+        app:layout_constraintRight_toLeftOf="@id/KanJiaBaoLandscapeAlarmViewId"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/kanJiaBaoLandscapeLiveHdTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:text="高清"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <com.evmtv.cloudvideo.common.presenter.monitor.live.CircleViewByImage
+        android:id="@+id/kanJiaBaoCircleLandscapeViewByImageViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/view_control_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLandscapeTalkingImageViewId"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/animation_speaking"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/liveLandscapePortraitProgressBarViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/microPhoneConstrainLayoutViewId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/kanjiabao_landscape_right_bg"
+        android:contentDescription="NotOnTouchListener"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/kanjiabao_alarm_logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/microPhoneJJViewId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/item_kanjiabao_alarm_jj" />
+
+            <ImageButton
+                android:id="@+id/microPhoneHZViewId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/item_kanjiabao_alarm_hz" />
+
+            <ImageButton
+                android:id="@+id/microPhoneDZViewId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/item_kanjiabao_alarm_dz" />
+
+            <ImageButton
+                android:id="@+id/microPhoneServiceViewId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:src="@drawable/item_kanjiabao_alarm_service" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
+

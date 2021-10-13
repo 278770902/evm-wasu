@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/kanjiabao_hd_bg"
+        android:width="200dp"
+        android:height="100dp"
+        android:gravity="center" />
+    <item
+        android:drawable="@drawable/kanjiabao_hd_gq_text"
+        android:gravity="center"
+        android:width="150dp"
+        android:height="90dp"
+        android:left="15dp"
+        android:right="30dp" />
+    <item
+        android:drawable="@drawable/kanjiabao_hd_gq_text_bq"
+        android:gravity="center"
+        android:width="150dp"
+        android:height="90dp"
+        android:right="15dp"
+        android:left="30dp"  />
+</layer-list>

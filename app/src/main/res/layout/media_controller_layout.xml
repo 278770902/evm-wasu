@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ImageButton
+        android:id="@+id/mediaControllerTopBackViewID"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="14dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/svg_close"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mediaControllerLayoutViewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:gravity="center"
+        android:padding="9dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/kanJiaBaoCenterLineView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/kanJiaBaoPauseRLViewId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/kanJiaBaoCenterLineView">
+
+            <CheckBox
+                android:id="@+id/kanJiaBaoPauseImageViewId"
+                style="@style/VideoSelectPlay"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerInside"/>
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/kanJiaBaoGoBackImageViewId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="9dp"
+            android:background="@null"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/svg_video_fast_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/kanJiaBaoPauseRLViewId" />
+
+        <ImageButton
+            android:id="@+id/kanJiaBaoFastForwardImageViewId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="9dp"
+            android:background="@null"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/svg_video_fast_forward"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/kanJiaBaoCenterLineView" />
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="9dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/kanJiaBaoFastForwardImageViewId">
+
+            <!-- KanJiaBaoLookBackSelectVoice           -->
+            <CheckBox
+                android:id="@+id/kanJiaBaoVoiceImageViewId"
+                style="@style/KanJiaBaoLookBackSelectVoice18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/kanJiaBaoSeekBarLinearViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toTopOf="@id/kanJiaBaoFastForwardImageViewId">
+
+
+            <!--             style="?android:attr/progressBarStyleHorizontal"-->
+            <SeekBar
+                android:id="@+id/kanJiaBaoSeekBarViewId"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/timeCurrentPlayTextViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="4dp"
+                android:text="00:00/00:00"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/kanJiaBaoSeekBarViewId"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+   <!-- <FrameLayout
+        android:id="@+id/layout_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_center_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/video_volume_bg" />
+
+        <ProgressBar
+            android:id="@+id/progress_center"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="80dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:max="100"
+            android:progress="20"
+            android:progressDrawable="@drawable/layer_progress"
+            android:visibility="visible" />
+    </FrameLayout>-->
+
+</android.support.constraint.ConstraintLayout>

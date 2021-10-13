@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogMessageTwobtnLLViewID"
+    style="@style/IposDialogActivity"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/logout_dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/loginOutContextTextViewID"
+        style="@style/logOutDialogContextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="您还没有登录，请先登录" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/loginOutDialogCancelViewID"
+            android:layout_width="140dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/selector_sc_login_btn_next_cencel_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+
+
+        <Button
+            android:id="@+id/loginOutDialogOKViewID"
+            android:layout_width="140dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/selector_login_btn_next_bg"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/KanJiaBaoCallPoliceViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/KanJiaBaoCallPoliceJJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/item_monitor_alarm_f"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+        <ImageButton
+            android:id="@+id/KanJiaBaoCallPoliceHZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/item_monitor_alarm_hz_f"
+            app:layout_constraintStart_toEndOf="@id/KanJiaBaoCallPoliceJJ"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/KanJiaBaoCallPoliceDQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/item_monitor_alarm_qd_f"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/KanJiaBaoCallPoliceJJ" />
+
+
+        <ImageButton
+            android:id="@+id/KanJiaBaoCallPoliceService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/item_monitor_alarm_service_f"
+            app:layout_constraintStart_toEndOf="@id/KanJiaBaoCallPoliceDQ"
+            app:layout_constraintTop_toBottomOf="@id/KanJiaBaoCallPoliceHZ" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="52dp"
+        android:height="52.7dp">
+        <bitmap android:src="@drawable/transparent_bg" />
+    </item>
+    <item
+        android:bottom="10dp"
+        android:gravity="center"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="10dp">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/layout_kanjiabao_control_eye_a" />
+    </item>
+</layer-list>

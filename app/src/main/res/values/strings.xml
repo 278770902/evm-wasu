@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MVPCloudVideo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="readPrivacyProtocolString"><u>点击阅读隐私协议</u></string>
+
+
+    <string name="kanJiaBaoMainItemModeOnText">启动看家模式</string>
+    <string name="kanJiaBaoMainItemModeOffText">关闭看家模式</string>
+    <string name="kanJiaBaoMobileAlarmInfoText">报警信息</string>
+    <string name="kanJiaBaoMobileAlarmOffLineText">离线信息</string>
+    <!--存取看家宝单机顶盒view-->
+    <item name="KanJiaBaoTabSelectView" type="id"></item>
+    <!--存取看家宝单机顶盒所在索引-->
+    <item name="KanJiaBaoTabSelectIndex" type="id"></item>
+    <!--存取看家宝单机顶盒所在索引-->
+    <item name="KanJiaBaoTabSelectStbGuid" type="id"></item>
+    <!--看家宝摄像头在线情况 true false-->
+    <item name="KanJiaBaoItemOnline" type="id"></item>
+    <!--监控直播 竖屏播控view true false-->
+    <item name="MonitorLiveTabSelectView" type="id"></item>
+
+    <!--监控直播 竖屏播控view true false-->
+    <item name="MonitorLiveTabEntity" type="id"></item>
+
+    <item name="type_header" type="integer" />
+    <item name="type_footer" type="integer" />
+    <item name="type_child" type="integer" />
+    <item name="type_empty" type="integer" />
+</resources>

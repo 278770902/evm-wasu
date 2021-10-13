@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#A4000000"
+        android:gravity="center"
+        android:minHeight="42dp"
+        android:orientation="horizontal"
+        android:padding="9dp">
+
+        <ImageButton
+            android:id="@+id/kanJiaBaoPauseImageViewId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/svg_video_play_off"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/kanJiaBaoVoiceImageViewId"
+            style="@style/KanJiaBaoLookBackSelectVoice18"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="7dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            app:layout_constraintLeft_toRightOf="@id/kanJiaBaoPauseImageViewId"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/fullscreenIBViewId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/svg_screen"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/image_center_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/media_controller_video_volume_bg" />
+
+        <ProgressBar
+            android:id="@+id/progress_center"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="80dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:max="100"
+            android:progress="20"
+            android:progressDrawable="@drawable/layer_progress"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainNavigationSelectTextColor">#A2A0A0</color>
+    <color name="mainNavigationTextColor">@color/title_background</color>
+    <color name="weChatNavigationTextColor">@color/title_background</color>
+    <color name="title_background">#2196F3</color>
+</resources>

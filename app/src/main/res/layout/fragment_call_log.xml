@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.evmtv.cloudvideo.common.view.fragment.wechat.CallLogFragment">
+
+
+    <com.andview.refreshview.XRefreshView
+        android:id="@+id/callLogXRefreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.evmtv.cloudvideo.common.view.tool.sticky.StickyListHeadersListView
+            android:id="@+id/callLogListViewID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000" />
+
+    </com.andview.refreshview.XRefreshView>
+</FrameLayout>

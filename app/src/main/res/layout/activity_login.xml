@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Hide_displayLinout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:keepScreenOn="true">
+
+
+    <ImageView
+        android:id="@+id/loginBackImageViewID"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="center"
+        android:src="@drawable/svg_back_left"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <Button
+        android:id="@+id/loginViewID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/selector_login_btn_next_bg"
+        android:text="登录"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PassLoginLayoutViewID" />
+
+    <FrameLayout
+        android:id="@+id/PassLoginLayoutViewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_layout">
+
+        <com.evmtv.cloudvideo.common.view.tool.XEditText
+            android:id="@+id/passwordViewID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/sc_icon_message"
+            android:drawableRight="@drawable/icon_message_on"
+            android:drawablePadding="5dp"
+            android:hint="请输入密码！"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/title_background"
+            android:textColorHint="@color/title_background"
+            android:textCursorDrawable="@drawable/shape_edt"
+            android:textSize="14dp"
+            android:theme="@style/LoginEditTextLight" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/SMSLoginLayoutViewID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_layout">
+
+        <EditText
+            android:id="@+id/SMSLoginEditViewID"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/svg_verification_code"
+            android:drawablePadding="5dp"
+            android:hint="验证码！"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/title_background"
+            android:textColorHint="@color/title_background"
+            android:textCursorDrawable="@drawable/shape_edt"
+            android:textSize="14dp"
+            android:theme="@style/LoginEditTextLight" />
+
+
+        <Button
+            android:id="@+id/SMSLoginButtonViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/title_background"
+            android:text="获取验证码" />
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+
+
+    <LinearLayout
+        android:id="@+id/textForViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginViewID">
+
+        <TextView
+            android:id="@+id/forgetPasswordViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="20dp"
+            android:text="忘记密码"
+            android:textColor="@color/title_background"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+
+        <TextView
+            android:id="@+id/registerNewViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:text="立即注册"
+            android:textColor="@color/title_background" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/username_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9">
+
+        <EditText
+            android:id="@+id/userNameViewID"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:digits="0123456789"
+            android:drawableLeft="@drawable/sc_icon_account"
+            android:drawablePadding="5dp"
+            android:hint="请输入手机号码！"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@color/title_background"
+            android:textColorHint="@color/title_background"
+            android:textCursorDrawable="@drawable/shape_edt"
+            android:textSize="14dp"
+            android:theme="@style/LoginEditTextLight" />
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/loginProgressBarViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

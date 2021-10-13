@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.evmtv.cloudvideo.common.view.UserRelationActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/titleRelViewID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TitleHighDP"
+        android:background="@color/title_background"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backViewID"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:padding="23dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/svg_back_left" />
+
+        <TextView
+            android:id="@+id/titleViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="帐号关联"
+            android:textColor="@color/title_color" />
+
+        <ImageButton
+            android:id="@+id/shareQRCodeViewID"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/svg_focus_focusing" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/userRelationRecViewID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+{
+  "actionArr": [
+    {
+      "text": "扫描区域码注册",
+      "action": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY"
+    },
+    {
+      "text": "选择区域码注册",
+      "action": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY"
+    }
+  ],
+  "directText": "注册",
+  "DirectStartAction": "com.evmtv.cloudvideo.common.USER_REGISTER_ACTIVITY"
+}

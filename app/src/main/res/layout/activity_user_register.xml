@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:dividerPadding="0dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titleRelViewID"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TitleHighDP"
+        android:background="@color/title_background">
+
+        <ImageButton
+            android:id="@+id/backViewID"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:padding="23dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/svg_back_left" />
+
+        <TextView
+            android:id="@+id/titleViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="APP二维码"
+            android:textColor="@color/title_color" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/shape_linear_divider"
+        android:dividerPadding="0dp"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:id="@+id/line_reg_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/register_reg_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:text="所属区域："
+                android:textColor="#13252E"
+                android:textSize="@dimen/userRegisterTextSize" />
+
+            <EditText
+                android:id="@+id/register_edit_reg_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:ems="10"
+                android:enabled="false"
+                android:gravity="center|left"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="@dimen/userRegisterTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/register_user_name"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:text="用户名："
+                android:textColor="#13252E"
+                android:textSize="@dimen/userRegisterTextSize" />
+
+            <EditText
+                android:id="@+id/register_edit_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="请输入真实姓名"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColorHint="@color/lightGray"
+                android:textSize="@dimen/UserRegisterHintTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/phone_numb"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|right"
+                android:text="手机号："
+                android:textColor="@color/userRegisterTextColor"
+                android:textSize="@dimen/userRegisterTextSize" />
+
+            <EditText
+                android:id="@+id/edt_phone_numb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/phone_numb"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="请输入手机号"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColorHint="@color/lightGray"
+                android:textSize="@dimen/UserRegisterHintTextSize" />
+
+            <Button
+                android:id="@+id/but_get_return"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_alignRight="@+id/edt_phone_numb"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@color/title_background"
+                android:lines="1"
+                android:text="获取验证码"
+                android:textColor="@color/sysTitleTextColor"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:text="验证码："
+                android:textColor="@color/userRegisterTextColor"
+                android:textSize="@dimen/userRegisterTextSize" />
+
+            <EditText
+                android:id="@+id/edt_ident_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="请输入获取的验证码"
+                android:inputType="number"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColorHint="@color/lightGray"
+                android:textSize="@dimen/UserRegisterHintTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:text="输入密码："
+                android:textColor="@color/userRegisterTextColor"
+                android:textSize="@dimen/userRegisterTextSize" />
+
+            <com.evmtv.cloudvideo.common.view.tool.XEditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:drawableRight="@drawable/icon_message_on"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="请输入6-16位字符新密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/lightGray"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center|right"
+                android:text="确认密码："
+                android:textColor="@color/userRegisterTextColor"
+                android:textSize="@dimen/userRegisterTextSize" />
+
+            <com.evmtv.cloudvideo.common.view.tool.XEditText
+                android:id="@+id/sur_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:background="@null"
+                android:drawableRight="@drawable/icon_message_on"
+                android:ems="10"
+                android:gravity="center|left"
+                android:hint="请重复输入相同的新密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/lightGray"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/read_rel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/RegisterReadViewId"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="1dp"
+                android:clickable="false"
+                android:enabled="false"
+                android:textSize="@dimen/UserRegisterHintTextSize" />
+
+            <TextView
+                android:id="@+id/RegisterReadTextViewId"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="65dp"
+                android:autoLink="web"
+                android:gravity="center_vertical"
+                android:text="@string/readPrivacyProtocolString"
+                android:textColor="@color/userRegisterTextColor"
+                android:textSize="@dimen/UserRegisterHintTextSize" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_out_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/selector_login_btn_next_bg"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/UserRegisterHindTextViewID"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="友情提示：请用真实常用的手机号码注册，方便身份认证。"
+        android:textSize="15sp"></TextView>
+</LinearLayout>

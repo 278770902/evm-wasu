@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_item_bottom_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/kanJiaBaoMainInfoCameraImageViewId"
+            android:layout_width="20dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/item_kanjiabao_camera"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/kanJiaBaoCameraNameTextViewId"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/kanJiaBaoCameraNameTextViewId"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="摄像头客厅"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toRightOf="@id/kanJiaBaoMainInfoCameraImageViewId"
+            app:layout_constraintRight_toLeftOf="@id/KanJiaBaoMainShareViewID"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/KanJiaBaoMainShareViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:text="取消分享"
+            app:layout_constraintLeft_toRightOf="@id/kanJiaBaoCameraNameTextViewId"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/kanJiaBaoMainInfoImgViewId"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/item_kanjiabao_default_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/kanJiaBaoMainInfoCameraImageViewId" />
+
+        <LinearLayout
+            android:id="@+id/kanJiaBaoMainModelViewID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="_EMT"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/kanJiaBaoMainInfoImgViewId">
+
+            <RelativeLayout
+                android:id="@+id/startModeKanJiaBaoItemViewID"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/layer_kanjiabao_user_on"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/layer_kanjiabao_mode_icon" />
+
+                    <TextView
+                        android:id="@+id/startModeKanJiaBaoItemTextViewID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:gravity="left|center_vertical"
+                        android:lines="1"
+                        android:text="@string/kanJiaBaoMainItemModeOnText"
+                        android:textColor="@color/darker"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ib_monitor_set"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/svg_kanjiabao_setting_ing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:text="设置"
+                        android:textColor="@color/darker"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kanJiaBaoMainLookBackViewID"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/svg_kanjiabao_look_back_ing" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:text="回看"
+                        android:textColor="@color/darker"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

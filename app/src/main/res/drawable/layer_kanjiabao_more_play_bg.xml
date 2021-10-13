@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="176dp"
+        android:height="99dp">
+        <bitmap android:src="@drawable/item_meeting_activity_bk" />
+    </item>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/item_kanjiabao_more_play_item_play_icon" />
+    </item>
+</layer-list>

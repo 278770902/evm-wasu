@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="头像"
+        android:textColor="#FF000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/headImageViewID"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/my_setting_default_header"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="昵称："
+        android:textColor="#FF000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headImageViewID" />
+
+    <TextView
+        android:id="@+id/headUserNameViewID"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="sadafadsf"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headImageViewID" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="账户类型："
+        android:textColor="#FF000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headUserNameViewID" />
+
+    <TextView
+        android:id="@+id/headTypeViewID"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="主帐号"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headUserNameViewID" />
+
+    <Button
+        android:id="@+id/userRelationBtnViewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_sc_login_btn_next_cencel_bg"
+        android:text="取消关联"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/headTypeViewID" />
+
+</android.support.constraint.ConstraintLayout>

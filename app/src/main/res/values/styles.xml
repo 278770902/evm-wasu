@@ -1,0 +1,233 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 隐藏标题栏 -->
+        <item name="windowNoTitle">true</item>
+        <!-- 隐藏状态栏 -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="LoginEditTextLight" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/darker_gray</item>
+        <item name="colorControlActivated">@android:color/darker_gray</item>
+    </style>
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/anim_enter_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_exit_from_bottom</item>
+    </style>
+
+    <!-- 中间弹出框 -->
+    <style name="dialog_center" parent="Theme.AppCompat.Dialog.Alert">
+        <!-- 去黑边 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:screenOrientation">portrait</item>
+        <!-- 设置是否可滑动 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 背景 -->
+        <!-- 窗口背景 @color/touming的值为：#00000000 ， style中不能直接引用16进制，感谢评论区的老铁提醒-->
+        <item name="android:windowBackground">@color/touming</item>
+        <!-- 是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 点击空白部分activity不消失 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="MainNavigationTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@color/white</item>
+        <item name="tabIndicatorColor">@android:color/transparent</item>
+        <item name="tabIndicatorHeight">0.1dp</item>
+        <item name="tabSelectedTextColor">@color/mainNavigationTextColor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="WeChatNavigationTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@color/white</item>
+        <item name="tabIndicatorColor">@color/title_background</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">@color/weChatNavigationTextColor</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="IposDialogActivity" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="progressDialogActivity" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <style name="logOutDialogContextStyle">
+        <item name="android:textColor">#5a6164</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="logOutDialogStyle" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/logOutDialogStyle</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="progressDialogStyle" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/logOutDialogStyle</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="VideoSelectPlay" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_video_play</item>
+    </style>
+
+    <style name="KanJiaBaoLookBackSelectVoice18" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_select_video_voice</item>
+    </style>
+
+    <style name="MorePlaySelectVoice" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_select_grey_video_voice</item>
+    </style>
+
+
+    <declare-styleable name="QRCodeView">
+        <!-- 扫描框距离toolbar底部的距离，默认值为90dp -->
+        <attr name="qrcv_topOffset" format="dimension|reference" />
+        <!-- 扫描框边角线的宽度，默认值为3dp -->
+        <attr name="qrcv_cornerSize" format="dimension|reference" />
+        <!-- 扫描框边角线的长度，默认值为20dp -->
+        <attr name="qrcv_cornerLength" format="dimension|reference" />
+        <!-- 扫描框边角线的颜色，默认值为@android:color/white -->
+        <attr name="qrcv_cornerColor" format="color|reference" />
+        <!-- 扫描框的宽度，默认值为200dp -->
+        <attr name="qrcv_rectWidth" format="dimension|reference" />
+        <!-- 条码扫样式描框的高度，默认值为140dp -->
+        <attr name="qrcv_barcodeRectHeight" format="dimension|reference" />
+        <!-- 除去扫描框，其余部分阴影颜色，默认值为#33FFFFFF -->
+        <attr name="qrcv_maskColor" format="color|reference" />
+        <!-- 扫描线的宽度，默认值为1dp -->
+        <attr name="qrcv_scanLineSize" format="dimension|reference" />
+        <!-- 扫描线的颜色，默认值为@android:color/white -->
+        <attr name="qrcv_scanLineColor" format="color|reference" />
+        <!-- 扫描线距离上下或者左右边框的间距，默认值为0dp -->
+        <attr name="qrcv_scanLineMargin" format="dimension|reference" />
+        <!-- 是否显示默认的图片扫描线，默认值为false -->
+        <attr name="qrcv_isShowDefaultScanLineDrawable" format="boolean" />
+        <!-- 扫描线的图片资源，默认值为null -->
+        <attr name="qrcv_customScanLineDrawable" format="reference" />
+        <!-- 扫描边框的宽度，默认值为1dp -->
+        <attr name="qrcv_borderSize" format="dimension|reference" />
+        <!-- 扫描边框的颜色，默认值为@android:color/white -->
+        <attr name="qrcv_borderColor" format="color|reference" />
+        <!-- 扫描线从顶部移动到底部的动画时间，默认值为1000 -->
+        <attr name="qrcv_animTime" format="integer" />
+        <!-- 扫描框是否垂直居中，该属性为true时会忽略qrcv_topOffset属性，默认值为false -->
+        <attr name="qrcv_isCenterVertical" format="boolean" />
+        <!-- Toolbar的高度，当有设置qrcv_isCenterVertical属性时，通过该属性来修正有Toolbar时导致扫描框垂直居中的偏差，默认值为0dp -->
+        <attr name="qrcv_toolbarHeight" format="dimension|reference" />
+        <!-- 是否是扫条形码，默认值为false -->
+        <attr name="qrcv_isBarcode" format="boolean" />
+        <!-- 扫描二维码时的提示文案，默认值为null -->
+        <attr name="qrcv_qrCodeTipText" format="string|reference" />
+        <!-- 扫描条码时的提示文案，默认值为null -->
+        <attr name="qrcv_barCodeTipText" format="string|reference" />
+        <!-- 提示文案字体大小，默认值为14sp -->
+        <attr name="qrcv_tipTextSize" format="dimension|reference" />
+        <!-- 提示文案颜色，默认值为@android:color/white -->
+        <attr name="qrcv_tipTextColor" format="color|reference" />
+        <!-- 提示文案是否在扫描框的底部，默认值为false -->
+        <attr name="qrcv_isTipTextBelowRect" format="boolean" />
+        <!-- 提示文案与扫描框之间的间距，默认值为20dp -->
+        <attr name="qrcv_tipTextMargin" format="dimension|reference" />
+        <!-- 是否把提示文案作为单行显示，默认值为false -->
+        <attr name="qrcv_isShowTipTextAsSingleLine" format="boolean" />
+        <!-- 是否显示提示文案的背景，默认值为false -->
+        <attr name="qrcv_isShowTipBackground" format="boolean" />
+        <!-- 提示文案的背景色，默认值为#22000000 -->
+        <attr name="qrcv_tipBackgroundColor" format="color|reference" />
+        <!-- 扫描线是否来回移动，默认值为true -->
+        <attr name="qrcv_isScanLineReverse" format="boolean" />
+        <!-- 是否显示默认的网格图片扫描线，默认值为false -->
+        <attr name="qrcv_isShowDefaultGridScanLineDrawable" format="boolean" />
+        <!-- 扫描线的网格图片资源，默认值为null -->
+        <attr name="qrcv_customGridScanLineDrawable" format="reference" />
+        <!-- 是否只识别扫描框区域的二维码，默认值为false -->
+        <attr name="qrcv_isOnlyDecodeScanBoxArea" format="boolean" />
+    </declare-styleable>
+
+    <style name="KanJiaBaoLandscapeSelectVoice" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_kanjiabao_landscape_voice</item>
+    </style>
+
+    <style name="KanJiaBaoHdCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_kanjiabao_hd</item>
+    </style>
+
+    <style name="KanJiaBaoHdCheckBox200" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_kanjiabao_hd_200</item>
+    </style>
+
+    <style name="UpdateButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:minWidth">56dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:background">@drawable/selector_fir_button_update</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="UpdateDialogStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="KanJiaBaoMorePlayListCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_more_play_list_check_box</item>
+    </style>
+</resources>

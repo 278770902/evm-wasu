@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:descendantFocusability="blocksDescendants">
+
+
+
+        <ImageButton
+            android:id="@+id/callLogUserCheckViewID"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:padding="8dp"
+            android:background="@null"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/callLogUserImageViewID"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toEndOf="@+id/callLogUserCheckViewID"
+            android:scaleType="centerCrop"
+            android:src="@drawable/my_setting_default_header" />
+
+
+        <TextView
+            android:id="@+id/callLogNameViewID"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/callLogUserImageViewID"
+            android:text="13219900924"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/callLogImgTypeViewID"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/callLogNameViewID" />
+
+        <TextView
+            android:id="@+id/callLogDayViewID"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/callLogImgTypeViewID"
+            android:text="天"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/callLogTimeViewID"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/callLogDayViewID"
+            android:text="时间"
+            android:textSize="9dp" />
+
+        <ImageView
+            android:id="@+id/callLogItemVideoViewID"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/callLogTimeViewID"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/callLogImgBackViewID"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/callLogTimeViewID"
+            android:padding="5dp"
+            android:src="@drawable/svg_play_back"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

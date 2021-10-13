@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/morePlayHeadItem"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/layer_more_play_head_bg"
+        android:paddingBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/headMorePlayViewId"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/item_kanjiabao_camera_online"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/morePlayHeadItemIconViewId"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/svg_kanjiabao_more_list"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tx_monitor_info"
+            android:layout_width="86dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="摄像头列表"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/headMorePlayViewId"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

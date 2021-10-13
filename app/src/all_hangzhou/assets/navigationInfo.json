@@ -1,0 +1,97 @@
+{
+  "mainNavigation": {
+    "navigationContent": [
+      {
+        "groupId": 0,
+        "itemId": 0,
+        "order": 0,
+        "type": "fragment",
+        "title": "首页",
+        "icon": "selector_main_bottom_education",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.EWebViewFragment",
+        "content": {
+          "startType": "EWebView",
+          "value": "main/navigationMain.json"
+        }
+      },
+      {
+        "groupId": 0,
+        "itemId": 1,
+        "order": 1,
+        "type": "fragment",
+        "title": "便民服务",
+        "icon": "selector_main_bottom_examination",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.EWebViewFragment",
+        "content": {
+          "startType": "EWebView",
+          "value": "main/navigationService.json"
+        }
+      },
+      {
+        "groupId": 0,
+        "itemId": 2,
+        "order": 2,
+        "title": "我的",
+        "type": "fragment/login",
+        "icon": "selector_main_bottom_my",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.MyFragment",
+        "content": {
+          "startType": "LocalPage",
+          "value": "main/navigationSetting.json"
+        }
+      }
+    ],
+    "firstChoiceItemId": 0
+  },
+  "LoginTextOnClick": {
+    "loginContext": [
+      {
+        "text": "忘记密码",
+        "startType": "StartLocalActivity",
+        "action": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY"
+      },
+      {
+        "text": "用户注册",
+        "startType": "StartLocalRegisterActivity",
+        "action": "main/loginRegister.json"
+      },
+      {
+        "text": "游客访问",
+        "startType": "StartLocalActivity",
+        "action": "com.evmtv.cloudvideo.common.main"
+      }
+    ]
+  },
+  "guideSplash": [
+    {
+      "order": 1,
+      "icon": "wuhai_splash_a"
+    },
+    {
+      "order": 2,
+      "icon": "wuhai_splash_b"
+    },
+    {
+      "order": 3,
+      "icon": "wuhai_splash_c"
+    }
+  ],
+  "startForgetPassWorldAction": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY",
+  "logOutTitle": "您还没有登录，请先登录&&确定退出登陆",
+  "addressPNS": "http://1.180.133.18:18081/cpns_v3/",
+  "addressDMS": "http://1.180.133.18:18081/easydms/",
+  "addressCSM": "http://1.180.133.18:18081/csm_v3/",
+  "addressUMS": "http://1.180.133.18:18081/ums_v3/",
+  "AddressAUMS": "http://1.180.133.18:18081/aums_server_interface/",
+  "AddressAUMSI": "http://1.180.133.18:18081/aums_terminal_interface/",
+  "AddressVOICE": "http://1.180.133.18:18081/",
+  "downloadAppUrl": "http://evmapps.evmtv.com/xz92",
+  "downloadAppQR": "download_app_code",
+  "xgAccessId": "1500002060",
+  "firAppId": "6110a7390d81cc7ce9ffa97b",
+  "providerFileAuthorities": "",
+  "h5port": "8080",
+  "publicAccountGuid": "41000000000178",
+  "versionName": "zhongyuan",
+  "versionCode": "1.0"
+}

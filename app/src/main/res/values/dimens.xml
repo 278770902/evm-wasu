@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TitleHighDP">60dp</dimen>
+    <dimen name="userRegisterTextSize">16sp</dimen>
+    <dimen name="UserRegisterHintTextSize">13sp</dimen>
+</resources>

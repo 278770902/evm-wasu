@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/kanjiabaoLiveVideoPlayerRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/kanjiabaoLiveVideoPlayerRecordTimeTextViewId"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            android:text="00:00:00"
+            android:textColor="@color/darker"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <!--        kanjiabao_live_video_player_record_image-->
+        <ImageButton
+            android:id="@+id/kanjiabaoLiveVideoPlayerRecordTimeButtonViewId"
+            android:layout_width="137dp"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/item_monitor_stop_record_bg" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

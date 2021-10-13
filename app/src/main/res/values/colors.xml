@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="title_background">#6b9e54</color>
+    <color name="title_color">#FFFFFF</color>
+
+    <color name="sys_listview_line_color">#1eb4b0b0</color>
+
+    <!--InputTextMsgDialog-->
+    <color name="dot_hong">#E73111</color>
+    <color name="text_bottom_comment">#9B9B9B</color>
+    <color name="touming">#00000000</color>
+    <color name="settingTextLine">#0099cc</color>
+
+    <color name="userRegisterTextColor">#13252E</color>
+    <color name="lightGray">#999999</color>
+
+    <color name="sysTitleTextColor">#ffffff</color>
+
+    <color name="darker">#999999</color>
+</resources>

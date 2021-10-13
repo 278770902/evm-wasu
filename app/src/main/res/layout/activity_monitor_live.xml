@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.evmtv.cloudvideo.common.utils.view.MyDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/KanJiaBaoLandscapeDrawerLayoutViewId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/titleRelViewID"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/TitleHighDP"
+                android:background="@color/title_background"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/backViewID"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:padding="23dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/svg_back_left" />
+
+                <TextView
+                    android:id="@+id/titleViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/backViewID"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/title_color" />
+
+                <ImageButton
+                    android:id="@+id/shareQRCodeViewID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:scaleType="center"
+                    android:src="@drawable/svg_write_setting" />
+            </RelativeLayout>
+
+            <com.evmtv.cloudvideo.common.view.tool.EvmControllerPlayerViewA
+                android:id="@+id/videoViewID"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusableInTouchMode="true"
+                android:padding="0.001px"
+                app:DoesItExistCloseView="false"
+                app:layout_constraintDimensionRatio="h,16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:beforePlaySrc="@drawable/item_monitor_look_back_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:outLineSrc="@drawable/item_monitor_bg_outline"
+                app:layout_constraintTop_toBottomOf="@id/titleRelViewID" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/monitorLiveNavigationViewID"
+                style="@style/MainNavigationTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/videoViewID"
+                app:tabMode="scrollable"
+                app:tabTextAppearance="@style/MainNavigationTabLayout" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/monitorLiveLayoutViewID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</com.evmtv.cloudvideo.common.utils.view.MyDrawerLayout>

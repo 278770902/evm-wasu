@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.evmtv.cloudvideo.common.view.TestActivity">
+
+    <TextView
+        android:id="@+id/testTextViewID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/testCreateViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ping" />
+
+        <Button
+            android:id="@+id/testGetCViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/testCreateViewID"
+            android:text="向机顶盒获取通道号" />
+
+        <Button
+            android:id="@+id/testSendVideoViewID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/testGetCViewID"
+            android:text="发送投屏命令" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="版本20"/>
+    </RelativeLayout>
+</LinearLayout>
