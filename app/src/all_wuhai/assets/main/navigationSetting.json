@@ -1,0 +1,101 @@
+{
+  "levelOne": [
+    {
+      "name": "我的收藏",
+      "icon": "main_setting_icon_a",
+      "groupId": 0,
+      "itemId": 0,
+      "order": 0,
+      "content": {
+        "startType": "unknown",
+        "value": "setting/settingCollection.json"
+      }
+    },
+    {
+      "name": "我的管理",
+      "icon": "main_setting_icon_b",
+      "groupId": 0,
+      "itemId": 1,
+      "order": 1,
+      "content": {
+        "startType": "StartLocalActivity",
+        "value": "setting/settingAdministration.json"
+      }
+    },
+    {
+      "name": "我的消息",
+      "icon": "main_setting_icon_c",
+      "groupId": 0,
+      "itemId": 2,
+      "order": 2,
+      "content": {
+        "startType": "unknown",
+        "value": "setting/settingNews.json"
+      }
+    },
+    {
+      "name": "我的二维码",
+      "icon": "main_setting_icon_d",
+      "groupId": 0,
+      "itemId": 3,
+      "order": 3,
+      "content": {
+        "startType": "StartLocalActivity",
+        "value": "setting/settingMyCode.json"
+      }
+    }
+  ],
+  "levelTwo": [
+    {
+      "name": "版本信息",
+      "icon": "setting_icon_banben",
+      "groupId": 0,
+      "itemId": 1,
+      "order": 1,
+      "content": {
+        "startType": "unknown",
+        "title": "版本信息",
+        "value": "setting/settingForgetPassWorld.json"
+      }
+    },
+    {
+      "name": "操作说明",
+      "icon": "setting_icon_caozuo",
+      "groupId": 0,
+      "itemId": 2,
+      "order": 2,
+      "content": {
+        "startType": "unknown",
+        "title": "版本信息",
+        "value": "setting/settingForgetPassWorld.json"
+      }
+    },
+    {
+      "name": "设  置",
+      "icon": "setting_icon_shezhi",
+      "groupId": 0,
+      "itemId": 3,
+      "order": 3,
+      "content": {
+        "startType": "unknown",
+        "title": "设  置",
+        "value": "setting/settingForgetPassWorld.json"
+      }
+    },
+    {
+      "name": "退出登录",
+      "icon": "setting_icon_tuichu",
+      "groupId": 0,
+      "itemId": 7,
+      "order": 7,
+      "content": {
+        "startType": "logout",
+        "value": ""
+      }
+    }
+  ],
+  "userAgreement": "http://www.bndtn.com/bndtn/service_edu.html",
+  "privacyPolicy": "http://www.bndtn.com/bndtn/privacy.html",
+  "editPersonalAction": "com.evmtv.cloudvideo.common.editPersonal",
+  "backgroundIcon": "my_setting_bg"
+}

@@ -1,0 +1,87 @@
+{
+  "levelOne": [
+    {
+      "name": "我的试卷",
+      "icon": "main_setting_icon_a",
+      "groupId": 0,
+      "itemId": 0,
+      "order": 0,
+      "content": {
+        "startType": "StartLocalActivity",
+        "value": "setting/settingCollection.json"
+      }
+    },
+    {
+      "name": "学习记录",
+      "icon": "main_setting_icon_b",
+      "groupId": 0,
+      "itemId": 1,
+      "order": 1,
+      "content": {
+        "startType": "StartLocalActivity",
+        "value": "setting/settingAdministration.json"
+      }
+    },
+    {
+      "name": "绑定信息",
+      "icon": "main_setting_icon_c",
+      "groupId": 0,
+      "itemId": 2,
+      "order": 2,
+      "content": {
+        "startType": "StartLocalActivity",
+        "value": "setting/settingNews.json"
+      }
+    },
+    {
+      "name": "我的二维码",
+      "icon": "main_setting_icon_d",
+      "groupId": 0,
+      "itemId": 3,
+      "order": 3,
+      "content": {
+        "startType": "StartLocalActivity",
+        "value": "com.evmtv.cloudvideo.common.MYQRCODE"
+      }
+    }
+  ],
+  "levelTwo": [
+    {
+      "name": "APP二维码",
+      "icon": "main_setting_edition",
+      "groupId": 0,
+      "itemId": 0,
+      "order": 0,
+      "content": {
+        "startType": "StartLocalActivity",
+        "value": "com.evmtv.cloudvideo.common.APPQRCODE"
+      }
+    },
+    {
+      "name": "修改密码",
+      "icon": "main_setting_message",
+      "groupId": 0,
+      "itemId": 2,
+      "order": 2,
+      "content": {
+        "startType": "StartLocalActivity",
+        "value": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY"
+      }
+    },
+    {
+      "name": "退出登录",
+      "icon": "main_setting_exit",
+      "groupId": 0,
+      "itemId": 7,
+      "order": 7,
+      "content": {
+        "startType": "logout",
+        "value": ""
+      }
+    }
+  ],
+  "userAgreement": "http://60.255.71.30:19005/sichuancatv/service_sxc.html",
+  "privacyPolicy": "http://shx.aums.evm.cloud.henancatv.com:10555/hncatv/service.html",
+  "editPersonalAction": "com.evmtv.cloudvideo.common.main.editPersonal",
+  "backgroundIcon": "my_setting_bg"
+}

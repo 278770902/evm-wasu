@@ -1,0 +1,60 @@
+{
+  "control": [
+    {
+      "name": "旋转摄像头",
+      "icon": "selector_kanjiabao_control",
+      "type": "control",
+      "layout": "item_monitor_control_circle",
+      "use": "load layout"
+    },
+    {
+      "name": "喊话",
+      "icon": "selector_kanjiabao_control_voice",
+      "type": "voice",
+      "layout": "item_monitor_control_micro",
+      "use": "load layout"
+    },
+    {
+      "name": "截图",
+      "icon": "selector_kanjiabao_control_screenshort",
+      "type": "screenshort",
+      "layout": "item_monitor_control_screenshort",
+      "use": "load layout"
+    },
+    {
+      "name": "高标清",
+      "icon": "selector_kanjiabao_control_hd",
+      "type": "hd",
+      "layout": "item_monitor_control_hd",
+      "use": "load layout"
+    },
+    {
+      "name": "录制",
+      "icon": "selector_kanjiabao_control_record",
+      "type": "record",
+      "layout": "item_monitor_control_record",
+      "use": "load layout"
+    },
+    {
+      "name": "报警",
+      "icon": "selector_kanjiabao_control_police",
+      "type": "police",
+      "layout": "item_monitor_control_police",
+      "use": "load layout"
+    },
+    {
+      "name": "多屏",
+      "icon": "selector_kanjiabao_control_eye",
+      "type": "eye",
+      "layout": "com.evmtv.cloudvideo.common.MorePlayActivity",
+      "use": "start action"
+    },
+    {
+      "name": "分享",
+      "icon": "selector_kanjiabao_control_share",
+      "type": "share",
+      "layout": "com.evmtv.cloudvideo.common.KanJiaBaoShareMainActivity",
+      "use": "start action"
+    }
+  ]
+}

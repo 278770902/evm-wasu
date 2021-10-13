@@ -1,0 +1,44 @@
+{
+  "control": [
+    {
+      "name": "旋转摄像头",
+      "icon": "selector_main_bottom_examination",
+      "type": "control"
+    },
+    {
+      "name": "喊话",
+      "icon": "selector_main_bottom_examination",
+      "type": "voice"
+    },
+    {
+      "name": "截图",
+      "icon": "selector_main_bottom_examination",
+      "type": "screenshort"
+    },
+    {
+      "name": "高标清",
+      "icon": "selector_main_bottom_examination",
+      "type": "hd"
+    },
+    {
+      "name": "录制",
+      "icon": "selector_main_bottom_examination",
+      "type": "record"
+    },
+    {
+      "name": "报警",
+      "icon": "selector_main_bottom_examination",
+      "type": "police"
+    },
+    {
+      "name": "多屏",
+      "icon": "selector_main_bottom_examination",
+      "type": "eye"
+    },
+    {
+      "name": "分享",
+      "icon": "selector_main_bottom_examination",
+      "type": "share"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "secondLevelNavigation": [
+    {
+      "groupId": 0,
+      "itemId": 0,
+      "order": 0,
+      "type": "tab",
+      "title": "首页",
+      "icon": "intelligent_home_kjb3x",
+      "childActivity": "com.evmtv.cloudvideo.common.view.LoginActivity"
+    },
+    {
+      "groupId": 0,
+      "itemId": 1,
+      "order": 1,
+      "title": "智能家",
+      "type": "tab",
+      "icon": "intelligent_home_qqt3x",
+      "childActivity": "com.evmtv.cloudvideo.common.view.WeChatActivity"
+    }
+  ]
+}

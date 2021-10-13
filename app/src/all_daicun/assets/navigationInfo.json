@@ -1,0 +1,88 @@
+{
+  "mainNavigation": {
+    "navigationContent": [
+      {
+        "groupId": 0,
+        "itemId": 0,
+        "order": 0,
+        "type": "fragment",
+        "title": "教育课程",
+        "icon": "selector_main_bottom_education",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.EWebViewFragment",
+        "content": {
+          "startType": "EWebView",
+          "value": "main/navigationMain.json"
+        }
+      },
+      {
+        "groupId": 0,
+        "itemId": 1,
+        "order": 1,
+        "type": "fragment",
+        "title": "练习/考试",
+        "icon": "selector_main_bottom_examination",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.EWebViewFragment",
+        "content": {
+          "startType": "EWebView",
+          "value": "main/navigationExam.json"
+        }
+      },
+      {
+        "groupId": 0,
+        "itemId": 2,
+        "order": 2,
+        "title": "个人中心",
+        "type": "fragment/login",
+        "icon": "selector_main_bottom_my",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.MyFragment",
+        "content": {
+          "startType": "LocalPage",
+          "value": "main/navigationSetting.json"
+        }
+      }
+    ],
+    "firstChoiceItemId": 0
+  },
+  "LoginTextOnClick": {
+    "loginContext": [
+      {
+        "text": "短信登陆-密码登陆",
+        "startType": "StartLocalLogin",
+        "action": "login"
+      },
+      {
+        "text": "忘记密码",
+        "startType": "StartLocalActivity",
+        "action": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY"
+      },
+      {
+        "text": "用户注册",
+        "startType": "StartLocalRegisterActivity",
+        "action": "main/loginRegister.json"
+      },
+      {
+        "text": "游客访问",
+        "startType": "StartLocalActivity",
+        "action": "com.evmtv.cloudvideo.common.main"
+      }
+    ]
+  },
+  "startForgetPassWorldAction": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY",
+  "logOutTitle": "您还没有登录，请先登录&&确定退出登陆",
+  "addressPNS": "http://www.bndtn.com:8564/EDUMS/edumsStudentInterface/",
+  "addressDMS": "http://www.bndtn.com:8564/EDUMS/edumsStudentInterface/",
+  "addressCSM": "http://www.bndtn.com:8564/EDUMS/edumsStudentInterface/",
+  "addressUMS": "http://www.bndtn.com:8564/EDUMS/edumsStudentInterface/",
+  "AddressAUMS": "http://www.bndtn.com:8564/EDUMS/edumsStudentInterface/",
+  "AddressAUMSI": "http://www.bndtn.com:8564/EDUMS/edumsStudentInterface/",
+  "AddressVOICE": "http://www.bndtn.com:8564/EDUMS/edumsStudentInterface/",
+  "downloadAppUrl": "http://evmapps.evmtv.com/xz92",
+  "downloadAppQR": "download_app_code",
+  "xgAccessId": "1500002060",
+  "firAppId": "5eb225d7f945481d09f06a57",
+  "providerFileAuthorities": "com.evmtv.cloudvideo.daicun.fileprovider",
+  "h5port": "8080",
+  "publicAccountGuid": "41000000000178",
+  "versionName": "zhongyuan",
+  "versionCode": "1.0"
+}

@@ -1,0 +1,103 @@
+{
+  "mainNavigation": {
+    "navigationContent": [
+      {
+        "groupId": 0,
+        "itemId": 0,
+        "order": 0,
+        "type": "fragment",
+        "title": "首页",
+        "icon": "selector_main_bottom_home",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.EWebViewFragment",
+        "content": {
+          "startType": "EWebView",
+          "value": "main/navigationMain.json"
+        }
+      },
+      {
+        "groupId": 0,
+        "itemId": 1,
+        "order": 1,
+        "title": "智能家",
+        "type": "fragment",
+        "icon": "selector_main_bottom_intelligent",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.MainTabFragment",
+        "content": {
+          "startType": "LocalPage",
+          "value": "main/navigationHome.json"
+        }
+      },
+      {
+        "groupId": 0,
+        "itemId": 3,
+        "order": 3,
+        "type": "intent",
+        "title": "看电视",
+        "icon": "icon_watch",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.MyFragment",
+        "content": {
+          "startType": "StartSystemActivity",
+          "value": "main/navigationWatchTV.json"
+        }
+      },
+      {
+        "groupId": 0,
+        "itemId": 2,
+        "order": 2,
+        "title": "大观",
+        "type": "fragment",
+        "icon": "selector_main_bottom_share",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.EWebViewFragment",
+        "content": {
+          "startType": "EWebView",
+          "value": "main/navigationShare.json"
+        }
+      },
+      {
+        "groupId": 0,
+        "itemId": 4,
+        "order": 4,
+        "title": "我的",
+        "type": "fragment",
+        "icon": "selector_main_bottom_my",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.MyFragment",
+        "content": {
+          "startType": "LocalPage",
+          "value": "main/navigationSetting.json"
+        }
+      }
+    ],
+    "firstChoiceItemId": 0
+  },
+  "startRegisterAction": {
+    "actionArr": [
+      {
+        "text": "扫描区域码注册",
+        "action": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY"
+      },
+      {
+        "text": "选择区域码注册",
+        "action": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY"
+      }
+    ],
+    "DirectStartAction": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY"
+  },
+  "startForgetPassWorldAction": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY",
+  "logOutTitle": "您还没有登录，请先登录&&确定退出登陆",
+  "addressPNS": "http://shx.monitor.evm.cloud.henancatv.com:10554/cpns_v3/",
+  "addressDMS": "http://shx.monitor.evm.cloud.henancatv.com:10554/",
+  "addressCSM": "http://shx.monitor.evm.cloud.henancatv.com:10554/csm_v3/",
+  "addressUMS": "http://shx.monitor.evm.cloud.henancatv.com:10554/ums_v3/",
+  "AddressAUMS": "http://shx.monitor.evm.cloud.henancatv.com:10554/",
+  "AddressAUMSI": "http://shx.monitor.evm.cloud.henancatv.com:10554/",
+  "AddressVOICE": "http://shx.monitor.evm.cloud.henancatv.com:10554/",
+  "downloadAppUrl": "http://evmapps.evmtv.com/az3j",
+  "downloadAppQR": "download_app_code",
+  "xgAccessId": "1500002060",
+  "firAppId": "5ddcef74f94548235e06c39e",
+  "providerFileAuthorities": "com.evmtv.cloudvideo.zhongyuan.fileprovider",
+  "h5port": "19005",
+  "publicAccountGuid": "41000000000178",
+  "versionName": "zhongyuan",
+  "versionCode": "1.0"
+}

@@ -1,0 +1,5 @@
+{
+  "url": "www.baidu.com",
+  "title": "修改密码",
+  "action": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY"
+}

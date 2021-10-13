@@ -1,0 +1,62 @@
+{
+  "weChatNavigation": {
+    "navigationContent": [
+      {
+        "groupId": 0,
+        "itemId": 0,
+        "order": 0,
+        "type": "fragment",
+        "title": "通话记录",
+        "icon": "main_bottom_home_selector",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.wechat.CallLogFragment",
+        "content": {
+          "startType": "LocalPage",
+          "value": "main/navigationMain.json"
+        }
+      },
+      {
+        "groupId": 0,
+        "itemId": 1,
+        "order": 1,
+        "title": "我的好友",
+        "type": "fragment",
+        "icon": "main_bottom_intelligent_selector",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.wechat.MyFriendsFragment",
+        "content": {
+          "startType": "LocalPage",
+          "value": "main/navigationHome.json"
+        }
+      },
+      {
+        "groupId": 0,
+        "itemId": 3,
+        "order": 3,
+        "type": "fragment",
+        "title": "好友申请",
+        "icon": "icon_watch",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.wechat.ApplyFragment",
+        "content": {
+          "startType": "LocalPage",
+          "value": "main/navigationWatchTV.json"
+        }
+      },
+      {
+        "groupId": 0,
+        "itemId": 2,
+        "order": 2,
+        "title": "我的收藏",
+        "type": "fragment",
+        "icon": "main_bottom_share_selector",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.wechat.CollectionFragment",
+        "content": {
+          "startType": "LocalPage",
+          "value": "main/navigationShare.json"
+        }
+      }
+    ],
+    "firstChoiceItemId": 0
+  },
+  "title": "亲情通",
+  "versionName": "zhongyuan",
+  "versionCode": "1.0"
+}

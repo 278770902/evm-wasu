@@ -1,0 +1,14 @@
+.evm-toast {
+  width:100% !important;
+
+  .toast-wrapper{
+    background:rgba(0, 0, 0, 0.5) !important;
+    border-radius:50px !important;
+  }
+
+  .toast-message{
+    font-size:18px;
+    display: flex;
+    justify-content: center;
+  }
+}

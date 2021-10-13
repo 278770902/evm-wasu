@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item android:drawable="@mipmap/main_navigation_home_on" android:state_checked="true" android:state_selected="true" />-->
+<!--    <item android:drawable="@mipmap/main_navigation_home_off" android:state_checked="false" android:state_selected="false" />-->
+    <item android:drawable="@mipmap/main_navigation_my_on"  android:state_selected="true" />
+    <item android:drawable="@mipmap/main_navigation_my_off"  />
+</selector>

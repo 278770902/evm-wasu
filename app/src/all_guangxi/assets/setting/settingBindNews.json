@@ -1,0 +1,5 @@
+{
+  "url": "www.baidu.com",
+  "title": "绑定信息",
+  "action": "com.evmtv.cloudvideo.common.BindStbActivity"
+}

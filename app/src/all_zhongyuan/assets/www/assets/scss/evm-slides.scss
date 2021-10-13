@@ -1,0 +1,60 @@
+evm-slides {
+  .slides {
+    height: auto;
+
+    .swiper-slide {
+      background-color: transparent;
+    }
+
+    a {
+      display: block;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    a:before {
+      content: "";
+      padding-top: 40%;
+      display: block;
+    }
+
+    // 展示图片的长宽比为5:2
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-container-horizontal>.swiper-pagination-bullets {
+      bottom: 6px;
+      padding-right: 10px;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0 2px;
+    }
+
+    .swiper-pagination {
+      text-align: right;
+    }
+
+    .swiper-pagination-bullet {
+      width: 4px;
+      height: 4px;
+      opacity: .2;
+      border-radius: 2px;
+      background-color: #ffffff;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: .5;
+      width: 10px;
+    }
+  }
+}

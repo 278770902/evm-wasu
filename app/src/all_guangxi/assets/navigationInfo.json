@@ -1,0 +1,65 @@
+{
+  "mainNavigation": {
+    "navigationContent": [
+      {
+        "groupId": 0,
+        "itemId": 0,
+        "order": 0,
+        "type": "fragment",
+        "title": "看家宝",
+        "icon": "selector_main_bottom_education",
+        "childFragment": "com.evmtv.cloudvideo.common.view.monitor.KanJiaBaoMainFragment",
+        "content": {
+          "startType": "LocalPage",
+          "value": ""
+        }
+      },
+      {
+        "groupId": 0,
+        "itemId": 2,
+        "order": 2,
+        "title": "个人中心",
+        "type": "fragment/login",
+        "icon": "selector_main_bottom_my",
+        "childFragment": "com.evmtv.cloudvideo.common.view.fragment.MyFragment",
+        "content": {
+          "startType": "LocalPage",
+          "value": "main/navigationSetting.json"
+        }
+      }
+    ],
+    "firstChoiceItemId": 0
+  },
+  "LoginTextOnClick": {
+    "loginContext": [
+      {
+        "text": "忘记密码",
+        "startType": "StartLocalActivity",
+        "action": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY"
+      },
+      {
+        "text": "用户注册",
+        "startType": "StartLocalRegisterActivity",
+        "action": "main/loginRegister.json"
+      }
+    ]
+  },
+  "startForgetPassWorldAction": "com.evmtv.cloudvideo.common.FORGET_PASS_WORLD_ACTIVITY",
+  "logOutTitle": "您还没有登录，请先登录&&确定退出登陆",
+  "addressPNS": "http://vdsjiating.96335.com:8080/cpns_v3_jiake",
+  "addressDMS": "http://vdsjiating.96335.com:8080/easydms",
+  "addressCSM": "http://vdsjiating.96335.com:8080/csm_v3_jiake",
+  "addressUMS": "http://vdsjiating.96335.com:8080/ums_v3_jiake",
+  "AddressAUMS": "http://vdsjiating.96335.com:8080/aums_server_interface",
+  "AddressAUMSI": "http://vdsjiating.96335.com:8080/aums_terminal_interface",
+  "AddressVOICE": "http://vdsjiating.96335.com:8080/",
+  "downloadAppUrl": "http://evmapps.evmtv.com/xz92",
+  "downloadAppQR": "download_app_code",
+  "xgAccessId": "1500002060",
+  "firAppId": "5eb225d7f945481d09f06a57",
+  "providerFileAuthorities": "com.evmtv.cloudvideo.daicun.fileprovider",
+  "h5port": "8080",
+  "publicAccountGuid": "41000000000178",
+  "versionName": "zhongyuan",
+  "versionCode": "1.0"
+}

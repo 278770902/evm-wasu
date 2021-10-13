@@ -1,0 +1,26 @@
+evm-column-slides {
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 0;
+  }
+
+  .swiper-container-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 2px;
+  }
+  .swiper-pagination {
+  }
+  .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+    opacity: 0.2;
+    border-radius: 2px;
+    background-color: #000000;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 0.5;
+    width: 10px;
+  }
+}
